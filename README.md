@@ -24,6 +24,10 @@ Project Solo is a interactive web assistant. Solo is able to answer questions, m
 - CSS
 - BootStrap
 - IBM Bluemix
+- Ionic
+- Ionic View
+- Amazon Web services
+- PaperClip
 
 ## Approach taken
 ![IDK](https://media.giphy.com/media/104vPBH8buV9vy/giphy.gif)
