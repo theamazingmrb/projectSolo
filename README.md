@@ -8,10 +8,10 @@
 Project Solo is a interactive web assistant. Solo is able to respond to questions, interpret human input through voice or text. Solo can perform various task such as adding events to your calendar, set reminders, and answer questions. Users will have the ability to create account to sign up to use Solo. Solo will be available online as well as through a mobile app.
 
 ## Wire Frames
-![frames](https://drive.google.com/file/d/0B88aPqQT14V7NzUzblNFTFo4NE0/preview" width="640" height="480")
+![frames](https://lh6.googleusercontent.com/-l-puJ2Zz1JPPxDWUv8ng7wbHTP93NlFxhhgHU1fQbEkZcDA3EoXOvgf_0dyjs-Oq0CqQo9Qak7BsDQ=w1238-h636-rw)
 
 ## ERD
-![erd](https://drive.google.com/file/d/0B88aPqQT14V7ZGdoWjBmWklnekU/preview" width="640" height="480")
+![erd](https://lh5.googleusercontent.com/ycIEpXRtEPBhW6HRi-SMcTu4_UJ69Eo_XRRkw8ayJyHCI-tALtzOD3uPdhSgPwPTEiRVQaNlrg92kbU=w1238-h636-rw)
 
 ## Technologies Used
 
