@@ -8,7 +8,7 @@ function index(req, res) {
   if(err) res.status(404).send(err)
 
   //otherwise respond with 200 success
-  res.status(200).send(users)
+  res.status(200).json(users)
   })
 }
 

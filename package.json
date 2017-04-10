@@ -28,6 +28,5 @@
     "method-override": "^2.3.4",
     "dotenv": "^2.0.0",
     "cors": "^2.7.1"
-
   }
 }
