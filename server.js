@@ -12,7 +12,7 @@ var express   = require('express'),
 require('dotenv').config();
 
 //connect with mongoose db
-mongoose.connect('mongodb://localhost/projectsolo')
+mongoose.connect(db)
 
 //bring in CORS
 app.use(cors());
