@@ -12,18 +12,42 @@ function index(req, res) {
   })
 }
 
-//POST /api/users
-//Create User action
+// POST /api/users
+// Create User action
+// function create(req, res) {
+//   var user = new User(req.body)
+//
+//   user.save(function(err, user){
+//     //return error ir error
+//     if(err) res.status(500).send(err)
+//
+//     res.status(201).send(user)
+//   })
+// }
 function create(req, res) {
-  var user = new User(req.body)
-
-  user.save(function(err, user){
-    //return error ir error
-    if(err) res.status(500).send(err)
-
-    res.status(201).send(user)
-  })
-}
+  if (!req.body.password) {
+    return res.status(422).send('Missing required fields');
+  }
+  User
+    .create(req.body)
+    .then(function(user) {
+      res.json({
+        success: true,
+        message: 'Successfully created user.',
+        data: {
+          email: user.email,
+          id:    user._id
+        }
+      });
+    }).catch(function(err) {
+      if (err.message.match(/E11000/)) {
+        err.status = 409;
+      } else {
+        err.status = 422;
+      }
+      next(err);
+    });
+};
 
 //Get /api/user/:id
 //Show to ruturn a single user
@@ -48,7 +72,7 @@ function update(req, res) {
     if(req.body.name) user.name = req.body.name
     if(req.body.email) user.email = req.body.email
     if(req.body.password) user.password = req.body.password
-    console.log(user)
+
     user.save(function(err) {
     // return 500 if theres a error
     if(err) res.status(500).send(err)
