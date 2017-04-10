@@ -1,4 +1,4 @@
-var {index, create, show, update} = require('../controllers/users_controller')
+var {index, create, show, update, destroy} = require('../controllers/users_controller')
 var express = require('express')
 var router = express.Router()
 
@@ -11,5 +11,6 @@ router.route('/')
 router.route('/:id')
       .get(show)
       .patch(update)
+      .delete(destroy)
 
 module.exports = router

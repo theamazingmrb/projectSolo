@@ -37,9 +37,42 @@ function show(req, res) {
   })
 }
 
+//Patch /api/user/:id
+//update specific user
+function update(req, res) {
+  User.findOne({_id: req.params.id}, function(err, user) {
+    //throw error is theres a error
+    if(err) res.status(400).send(err)
+    // var user = user[0]
+    //Only update specific changed fields of the user
+    if(req.body.name) user.name = req.body.name
+    if(req.body.email) user.email = req.body.email
+    if(req.body.password) user.password = req.body.password
+    console.log(user)
+    user.save(function(err) {
+    // return 500 if theres a error
+    if(err) res.status(500).send(err)
+
+    //otherwise respond with 200 success
+    res.status(200).send(user)
+
+    })
+  })
+}
+
+function destroy(req, res) {
+  User.remove({_id: req.params.id}, function(err, user) {
+    if(err) res.status(500).send(err)
+
+    //otherwise respond with 200 success
+    res.status(200).send({message: "User deleted Successfully"})
+  })
+}
+
 module.exports = {
       index: index,
       create: create,
       show: show,
-      update: update
+      update: update,
+      destroy: destroy
 }
