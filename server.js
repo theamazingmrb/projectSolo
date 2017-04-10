@@ -33,6 +33,9 @@ app.use(addFailedAuthHeader);
 //mount user routes at /api/users
 app.use('/api/users', userRoutes)
 
+//mount 'public' folder as '/'
+app.use(express.static('solo'))
+
 //run the web server
 app.listen(port, function(){
 	console.log('Server started on', port)

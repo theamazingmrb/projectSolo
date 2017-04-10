@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="ProjectSolo">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Solo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/soloController.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller="SoloController as soloCtrl">
+    <nav>
+      <a ui-sref-active="active" ui-sref="index">Solo</a> |
+  	  <a ui-sref-active="active" ui-sref="new">Sign Up</a>
+    </nav>
+    <main ui-view>
+			<!-- angular ui.router will insert page template here: -->
+		</main>
+  </body>
+</html>
