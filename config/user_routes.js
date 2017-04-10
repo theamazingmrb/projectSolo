@@ -6,12 +6,6 @@ var {index, create, show, update, destroy} = require('../controllers/users_contr
     usersController = require('../controllers/users_controller'),
     token = require('./token_auth')
 
-
-
-
-
-
-
 //  /api/users routes
 router.route('/')
       .get(index)

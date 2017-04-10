@@ -4,6 +4,7 @@ var express   = require('express'),
 	bodyParser	= require('body-parser'),
 	mongoose    = require('mongoose'),
 	port        = process.env.PORT || 3000,
+	db = process.env.MONGODB_URI || 'mongodb://localhost/projectsolo'
 	userRoutes  = require('./config/user_routes.js'),
 	cors        = require('cors')
 
