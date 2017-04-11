@@ -9,12 +9,16 @@ function SoloController($http) {
   self.newUser = {}
 
   self.addUser = addUser
+  self.displayUsers = displayUsers
+  self.deleteUser = deleteUser
 
   function displayUsers() {
-    $https
+
+    $http
       .get('https://sheltered-sea-41109.herokuapp.com/api/users')
       .then(function(res) {
-        self.all = res.date.users
+        self.all = res.data
+        console.log(res.data)
       })
   }
   displayUsers()
