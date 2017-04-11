@@ -43,7 +43,7 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope, $http) {
   $scope.playlists = [];
-  $http.get("https://sheltered-sea-41109.herokuapp.com/api/users", { cache: true })
+  $http.get("https://gateway.watsonplatform.net/conversation/api", { cache: true })
     .then(function(response){
       $scope.playlists = response.data
       console.log($scope.playlists)
