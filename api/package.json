@@ -27,6 +27,8 @@
     "method-override": "^2.3.4",
     "mongoose": "^4.9.4",
     "mongoose-bcrypt": "^1.4.2",
-    "morgan": "^1.8.1"
+    "morgan": "^1.8.1",
+    "prompt-sync": "^4.1.4",
+    "watson-developer-cloud": "^2.28.1"
   }
 }

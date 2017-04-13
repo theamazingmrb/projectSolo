@@ -6,6 +6,7 @@ var express   = require('express'),
 	port        = process.env.PORT || 3000,
 	db = process.env.MONGODB_URI || 'mongodb://localhost/projectsolo'
 	userRoutes  = require('./config/user_routes.js'),
+	watsonRoutes  = require('./config/watson_routes.js'),
 	cors        = require('cors')
 
 // use the .env file to hide sensitive variables
@@ -30,8 +31,11 @@ app.use(validateContentType);
 
 app.use(addFailedAuthHeader);
 
-//mount user routes at /api/users
+// mount user routes at /api/users
 app.use('/api/users', userRoutes)
+
+//mount watson routes
+app.use('/watson', watsonRoutes)
 
 //mount 'public' folder as '/'
 app.use(express.static('solo'))
