@@ -8,6 +8,7 @@ var {start, processResponse} = require('../controllers/watson_controller'),
 //  /watson  routes
 router.route('/')
     .get(start)
+    // .post(processResponse)
 
 
 

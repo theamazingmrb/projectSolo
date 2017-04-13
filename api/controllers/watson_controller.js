@@ -15,11 +15,12 @@ var conversation = new ConversationV1({
 // Start conversation with empty message.
 // conversation.message({}, processResponse); original test
 
-function start() {
+function start(req, response) {
 conversation.message({}, processResponse)
-console.log("conversations start")
-
+console.log("conversation successfully started")
+  response.status(200).json({text: "Conversation started yo"})
 }
+//response in terminal/console will be "Welcome to SOLO"
 
 
 
@@ -54,13 +55,16 @@ function processResponse(err, response) {
   if (!endConversation) {
     // var newMessageFromUser = prompt('>> ');
     var newMessageFromUser = "hello";
+    
     console.log(newMessageFromUser)
+
     conversation.message({
       input: { text: newMessageFromUser },
       // Send back the context to maintain state.
       context : response.context,
     }, processResponse)
-    newMessageFromUser = '';
+    // console.log(response.context)
+    newMessageFromUser = 'bye';
   }
 }
 
