@@ -1,4 +1,4 @@
-var {start, processResponse} = require('../controllers/watson_controller'),
+var {start, sendResponse} = require('../controllers/watson_controller'),
     express = require('express'),
     router = express.Router(),
     bodyParser = require('body-parser'),
@@ -8,7 +8,7 @@ var {start, processResponse} = require('../controllers/watson_controller'),
 //  /watson  routes
 router.route('/')
     .get(start)
-    // .post(processResponse)
+    .post(sendResponse)
 
 
 
