@@ -8,10 +8,10 @@
 Project Solo is a interactive web assistant. Solo is able to answer questions, make recommendations, and perform actions by delegating requests to a set of Web services. Solo can perform various task such as adding events to your calendar, setting reminders, and answering day to day questions. Users can access Solo by creating an account and logging in. Solo will be available online as well as through a mobile app.
 
 ## Wire Frames
-![frames](https://lh6.googleusercontent.com/-l-puJ2Zz1JPPxDWUv8ng7wbHTP93NlFxhhgHU1fQbEkZcDA3EoXOvgf_0dyjs-Oq0CqQo9Qak7BsDQ=w1238-h636-rw)
+![frames](https://github.com/theamazingmrb/projectSolo/blob/master/assets/File_000%20(2).jpeg?raw=true)
 
 ## ERD
-![erd](https://lh5.googleusercontent.com/ycIEpXRtEPBhW6HRi-SMcTu4_UJ69Eo_XRRkw8ayJyHCI-tALtzOD3uPdhSgPwPTEiRVQaNlrg92kbU=w1238-h636-rw)
+![erd](https://github.com/theamazingmrb/projectSolo/blob/master/assets/File_000%20(2).jpeg?raw=true)
 
 ## Technologies Used
 
