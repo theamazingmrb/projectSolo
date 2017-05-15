@@ -21,7 +21,7 @@ angular.module('app.controllers', [])
       function sendMessage() {
         console.log($scope.newMessage)
         $scope.messages.push({
-          name: "You",
+          name: "User",
           message: $scope.newMessage
         })
         $http

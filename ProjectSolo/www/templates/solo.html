@@ -1,24 +1,13 @@
 <ion-view title="Solo" id="page2">
   <ion-content padding="true" class="has-header">
-     {{messages}}
-
     <ul id="messages">
       <li ng-repeat="message in messages">
-        {{massage}}
+        <p>{{message.name}} said: {{message.message}}</p>
         <button></button>
       </li>
     </ul
 
-  <ion-list ng-repeat="message in messages">
-  <ion-item >
-    <!-- <ion-thumbnail item-left>
-      <img src="img/thumbnail-totoro.png">
-    </ion-thumbnail> -->
-    <h2>{{name}}</h2>
-    <p>{{message}}</p>
-    <button ion-button clear item-right>View</button>
-  </ion-item>
-</ion-list>
+
 
     <form ng-submit="sendMessage()">
       <input class="input"type="text" data-ng-model="$parent.newMessage" placeholder="Type input here">
