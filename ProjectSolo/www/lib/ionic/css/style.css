@@ -1,0 +1,13 @@
+img{
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+.logoBox{
+  text-align: center;
+}
+
+.signUp{
+  color: blue;
+}

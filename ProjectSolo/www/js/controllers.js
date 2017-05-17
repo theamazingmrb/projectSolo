@@ -17,7 +17,7 @@ angular.module('app.controllers', [])
       $scope.messages = []
       $scope.sendMessage = sendMessage
 
-       
+
       function sendMessage() {
         console.log($scope.newMessage)
         $scope.messages.push({
@@ -40,6 +40,7 @@ angular.module('app.controllers', [])
             })
             console.log(response.data)
           })
+          $scope.newMessage = ""
       }
     }
   ])
