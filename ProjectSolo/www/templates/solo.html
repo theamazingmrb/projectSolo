@@ -1,12 +1,12 @@
 <ion-view title="Solo" id="page2">
   <ion-content padding="true" class="has-header">
+  <div>
     <ul id="messages">
       <li ng-repeat="message in messages">
         <p>{{message.name}} said: {{message.message}}</p>
-        <button></button>
       </li>
     </ul
-
+  </div>
 
 
     <form ng-submit="sendMessage()">
