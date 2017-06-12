@@ -40,24 +40,35 @@ angular.module('app.routes', [])
     }
   })
 
+  .state('menu.signup', {
+    url: '/page4',
+    views: {
+      'side-menu21': {
+      templateUrl: 'templates/signup.html',
+      controller: 'accountCtrl'
+     }
+    }
+  })
+
+  .state('menu.translate', {
+    url: '/translate',
+    views: {
+      'side-menu21': {
+      templateUrl: 'templates/translate.html',
+      controller: 'translateCtrl'
+     }
+    }
+  })
+
+
+
   .state('menu', {
     url: '/side-menu21',
     templateUrl: 'templates/menu.html',
     controller: 'menuCtrl'
   })
 
-  .state('menu.signup', {
-    url: '/signup',
-    views:{
-      'side-menu21': {
-    templateUrl: 'templates/signup.html',
-    controller: 'accountCtrl'
-     }
-    }
-  })
-
-$urlRouterProvider.otherwise('/side-menu21/page1')
 
 
-
+  $urlRouterProvider.otherwise('/side-menu21/page1')
 });
