@@ -1,25 +1,26 @@
 <ion-view title="Login" id="page1">
-  <ion-content padding="true" class="has-header">
-    <div class="logoBox">
+  <ion-content padding="true" class="has-header background">
+      <div class="logoBox">
+        <!-- <img src="http://pre11.deviantart.net/a572/th/pre/f/2014/301/d/7/bender_by_bawzon-d84gtlk.png" alt="bender logo"> -->
+        <h3 class="textW">Welcome to</h3>
+        <h1 class="textW fontLobster">Solo</h1>
+        <h5 class="textW">Please Log In</h5>
+        <a class="signUp" ui-sref="menu.signup">Click here to sign up</a>
+        <br> <br>
+         <!-- <a ng-click="signup.html">View location 1</a> -->
+      </div>
+      <form id="login-form11" class="list">
+        <label class="item item-input inputC" id="login-input5">
+          <span class="input-label">Email</span>
+          <input type="email" placeholder="">
+        </label>
+        <div class="spacer" style="width: 300px; height: 15px;"></div>
+        <label class="item item-input inputC" id="login-input6">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="">
+        </label>
+      </form>
+      <button id="login-button1" class="button button-positive  button-block">Log in</button>
 
-    <!-- <img src="http://pre11.deviantart.net/a572/th/pre/f/2014/301/d/7/bender_by_bawzon-d84gtlk.png" alt="bender logo"> -->
-    <h3>Welcome to</h3>
-    <h1>Solo</h1>
-    <h5>Please Log In</h5>
-    <a class="signUp" ui-sref="menu.signup">Click here to sign up</a>
-     <!-- <a ng-click="signup.html">View location 1</a> -->
-    </div>
-    <form id="login-form11" class="list">
-      <label class="item item-input" id="login-input5">
-        <span class="input-label">Email</span>
-        <input type="email" placeholder="">
-      </label>
-      <div class="spacer" style="width: 300px; height: 15px;"></div>
-      <label class="item item-input" id="login-input6">
-        <span class="input-label">Input</span>
-        <input type="password" placeholder="">
-      </label>
-    </form>
-    <button id="login-button1" class="button button-positive  button-block">Log in</button>
   </ion-content>
 </ion-view>

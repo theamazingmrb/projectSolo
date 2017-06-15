@@ -1,13 +1,32 @@
-img{
+img {
   display: block;
   margin: auto;
   width: 60%;
 }
 
-.logoBox{
+.logoBox {
   text-align: center;
 }
 
-.signUp{
+.background {
+  /*background-color: black !important;*/
+  /*background-image: url('http://cdn.wallpapersafari.com/2/2/80P2ya.jpg');*/
+  background-image: url('https://media1.giphy.com/media/wjjFdxraKXFXa/200w.webp#94-grid1');
+  background-size: cover;
+}
+.textW {
+  color: white;
+}
+
+.signUp {
   color: blue;
+}
+
+.inputC {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+/*Fonts*/
+.fontLobster {
+  font-family: 'Lobster', cursive;
 }

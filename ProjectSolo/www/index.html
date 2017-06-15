@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
   <title></title>
 
@@ -78,33 +79,12 @@
 </head>
 
 <body ng-app="app" animation="slide-left-right-ios7">
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId: '1665985027039860',
-        xfbml: true,
-        version: 'v2.9'
-      });
-      FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {
-        return;
-      }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
   <div>
     <div>
       <ion-nav-bar class="bar-stable">
         <ion-nav-back-button></ion-nav-back-button>
       </ion-nav-bar>
-      <ion-nav-view></ion-nav-view>
+      <ion-nav-view class="background"></ion-nav-view>
     </div>
   </div>
 </body>
